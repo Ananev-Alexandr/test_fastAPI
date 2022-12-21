@@ -1,0 +1,63 @@
+.messages{
+    background: lightgray;
+    height: 300px;
+    width: 300px;
+    overflow: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.message{
+    margin-bottom: 3px
+}
+
+html{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: grey;
+    font-family: "Comic Sans MS";
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+  font-family: "Comic Sans MS";
+
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    background: lightgray;
+    margin-bottom: 5px;
+    width: 98%;
+    height: 25px;
+    border-radius: 10px;
+    font-family: "Comic Sans MS";
+}
+
+h1{
+    background: lightgray;
+    text-align: center;
+    border-radius: 10px;
+}

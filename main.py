@@ -1,8 +1,10 @@
 from fastapi import FastAPI, WebSocket, Request
 from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
 
 
 app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 
@@ -16,6 +18,9 @@ async def websocket_endpoint(websocket: WebSocket):
     now_val = 1
     await websocket.accept()
     while True:
-        data = await websocket.receive_text()
-        await websocket.send_text(f"{now_val}: Message: {data}")
+        data  = await websocket.receive_json()
+        await websocket.send_json({
+            "id" : now_val,
+            "message": data['message']
+        })
         now_val += 1
