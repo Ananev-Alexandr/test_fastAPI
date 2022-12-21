@@ -18,22 +18,11 @@ When the page reloads, the messages disappear and the message numbering starts f
 Python version __python3.10__ is required for a stable program launch, operation on versions less than 3.10 is possible, but has not been tested
 
 To install the dependencies, run the following command:
-<br>
-<code>
-pip install -r requirements.txt
-</code>
-<br>
+
+<code>pip install -r requirements.txt</code>
 
 After installing the dependencies, you can start the project with the command
-<br>
-<code>
-uvicorn main:app --reload
-</code>
-<br>
+<code>uvicorn main:app --reload</code>
 
 After executing the start command, go to the local address to see the front page:
-<br>
-<code>
-http://127.0.0.1:8000/
-</code>
-<br>
+<code>http://127.0.0.1:8000/</code>
